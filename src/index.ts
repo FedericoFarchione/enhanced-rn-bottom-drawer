@@ -1,1 +1,1 @@
-export { default } from "./bottom-drawer";
+export { BottomDrawer } from "./bottom-drawer";

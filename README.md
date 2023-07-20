@@ -1,4 +1,4 @@
-# rn-bottom-drawer
+# enhanced-rn-bottom-drawer
 
 A react-native bottom drawer component
 
@@ -41,7 +41,6 @@ import { BottomDrawer } from "enhanced-rn-bottom-drawer";
 | notchBar        | boolean    | true              | notch-bar on the header of the drawer |
 | notchColor      | ColorValue | #0000             | color of the notch bar                |
 | backGroundColor | ColorValue | #0000             | background color of the drawer        |
-|                 |            |                   |                                       |
 
 ## License
 

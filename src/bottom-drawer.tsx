@@ -1,28 +1,16 @@
+import { BottomDrawerProps } from "enhanced-rn-bottom-drawer";
 import React, { useCallback, useEffect, useRef } from "react";
 import {
   Animated,
-  ColorValue,
   Dimensions,
   PanResponder,
   StyleSheet,
   View,
   ViewProps,
 } from "react-native";
-
-export interface Props extends ViewProps {
-  isVisible: boolean;
-  closeAction: () => void;
-  openDuration?: number;
-  closeDuration?: number;
-  minHeight?: number;
-  maxHeight?: number;
-  notchBar?: boolean;
-  notchColor?: ColorValue;
-  backGroundColor?: ColorValue;
-}
 const { height } = Dimensions.get("window");
 
-export const BottomDrawer: React.FC<Props> = ({
+export const BottomDrawer: React.FC<BottomDrawerProps> = ({
   children,
   isVisible,
   closeAction,

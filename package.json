@@ -1,8 +1,9 @@
 {
   "name": "enhanced-rn-bottom-drawer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A bottom drawer component for React Native.",
   "main": "index.ts",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FedericoFarchione/react-native-bottom-drawer.git"
