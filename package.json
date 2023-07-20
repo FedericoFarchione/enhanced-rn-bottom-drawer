@@ -1,0 +1,33 @@
+{
+  "name": "react-native-bottom-drawer",
+  "version": "1.0.0",
+  "description": "A bottom drawer component for React Native.",
+  "main": "index.ts",
+  "repository": "https://github.com/FedericoFarchione/react-native-bottom-drawer",
+  "author": "Federico ZioFede <federicofarchione@live.it> (https://github.com/FedericoFarchione)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FedericoFarchione/react-native-bottom-drawer/issues"
+  },
+  "homepage": "https://github.com/FedericoFarchione/react-native-bottom-drawer#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "drawer",
+    "bottom-drawer"
+  ],
+  "dependencies": {
+    "react": ">=16.0.0",
+    "react-native": ">=0.72.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-native": ">=0.72.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15"
+  }
+}
