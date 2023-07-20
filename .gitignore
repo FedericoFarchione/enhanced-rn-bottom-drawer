@@ -8,13 +8,5 @@
 # testing
 /coverage
 
-# Project
-# *.md
-# /.vscode
-# /storybook/storyLoader.js
-# /plop-templates
-# /src/localization/locales
-
-./env
-
+.package-lock.json
 node_modules
