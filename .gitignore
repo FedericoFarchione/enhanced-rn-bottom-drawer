@@ -1,0 +1,19 @@
+# OSX
+#
+.DS_Store
+
+# Bundle artifact
+*.jsbundle
+
+# testing
+/coverage
+
+# Project
+# *.md
+# /.vscode
+# /storybook/storyLoader.js
+# /plop-templates
+# /src/localization/locales
+
+./env
+
