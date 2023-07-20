@@ -1,1 +1,1 @@
-export { default } from "./src/bottom-drawer";
+export { default } from "./src/index";

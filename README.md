@@ -17,12 +17,31 @@ yarn add rn-bottom-drawer
 ## Usage
 
 ```js
-import { multiply } from "rn-bottom-drawer";
+import { BottomDrawer } from "enhanced-rn-bottom-drawer";
 
-// ...
+<BottomDrawer isVisible={true} closeAction={() => {
+    */insert your action to close the drawer */
+    }}>
 
-const result = await multiply(3, 7);
+  {children}
+
+</BottomDrawer>;
 ```
+
+## Props
+
+| Props           | Type       | Default           | Description                           |
+| --------------- | ---------- | ----------------- | ------------------------------------- |
+| isVisible       | boolean    | REQUIRED          | none                                  |
+| closeAction     | void       | REQUIRED          | none                                  |
+| openDuration    | number     | 500               | time of the animation to open drawer  |
+| closeDuration   | number     | 500               | time of the animation to close drawer |
+| minHeight       | number     | 300               | minimum height of the drawer          |
+| maxHeight       | number     | ScreenHeight - 75 | maximum height of the drawer          |
+| notchBar        | boolean    | true              | notch-bar on the header of the drawer |
+| notchColor      | ColorValue | #0000             | color of the notch bar                |
+| backGroundColor | ColorValue | #0000             | background color of the drawer        |
+|                 |            |                   |                                       |
 
 ## License
 

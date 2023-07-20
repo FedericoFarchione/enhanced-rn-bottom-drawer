@@ -1,9 +1,12 @@
 {
-  "name": "react-native-bottom-drawer",
-  "version": "1.0.0",
+  "name": "enhanced-rn-bottom-drawer",
+  "version": "1.0.2",
   "description": "A bottom drawer component for React Native.",
   "main": "index.ts",
-  "repository": "https://github.com/FedericoFarchione/react-native-bottom-drawer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoFarchione/react-native-bottom-drawer.git"
+  },
   "author": "Federico ZioFede <federicofarchione@live.it> (https://github.com/FedericoFarchione)",
   "license": "MIT",
   "bugs": {
@@ -29,5 +32,8 @@
   },
   "devDependencies": {
     "@types/react": "^18.2.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
