@@ -5,13 +5,13 @@ A react-native bottom drawer component
 ## Installation
 
 ```sh
-npm install rn-bottom-drawer
+npm install enhanced-rn-bottom-drawer
 ```
 
 or install with yarn
 
 ```sh
-yarn add rn-bottom-drawer
+yarn add enhanced-rn-bottom-drawer
 ```
 
 ## Usage
