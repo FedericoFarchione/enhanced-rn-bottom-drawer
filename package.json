@@ -1,6 +1,6 @@
 {
   "name": "enhanced-rn-bottom-drawer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A bottom drawer component for React Native.",
   "main": "index.ts",
   "types": "index.d.ts",
@@ -23,16 +23,11 @@
     "drawer",
     "bottom-drawer"
   ],
-  "dependencies": {
-    "react": ">=16.0.0",
-    "react-native": ">=0.72.0"
-  },
-  "peerDependencies": {
-    "react": ">=16.0.0",
-    "react-native": ">=0.72.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/react": "^18.2.15"
+    "@types/react": "^18.2.15",
+    "react": ">=16.0.0",
+    "react-native": ">=0.72.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -102,8 +102,6 @@ export const BottomDrawer: React.FC<BottomDrawerProps> = ({
   );
 };
 
-export default BottomDrawer;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
