@@ -1,6 +1,6 @@
 {
   "name": "enhanced-rn-bottom-drawer",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A bottom drawer component for React Native.",
   "main": "index.ts",
   "types": "index.d.ts",

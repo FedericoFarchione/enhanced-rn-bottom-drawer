@@ -5,7 +5,6 @@ import {
   Dimensions,
   PanResponder,
   StyleSheet,
-  View,
   ViewProps,
 } from "react-native";
 const { height } = Dimensions.get("window");
@@ -31,7 +30,7 @@ export const BottomDrawer: React.FC<BottomDrawerProps> = ({
         duration: openDuration,
         useNativeDriver: true,
       }).start(),
-    [animatedValue]
+    []
   );
 
   //function to close the drawer with animation
@@ -42,7 +41,7 @@ export const BottomDrawer: React.FC<BottomDrawerProps> = ({
         duration: closeDuration,
         useNativeDriver: true,
       }).start(() => closeAction()),
-    [animatedValue, height, closeAction]
+    [animatedValue, height]
   );
 
   const panResponder = useRef(
@@ -50,12 +49,14 @@ export const BottomDrawer: React.FC<BottomDrawerProps> = ({
       onStartShouldSetPanResponder: () => true,
       onPanResponderMove: (event, gestureState) => {
         if (gestureState.dy > 1) {
-          Animated.event([null, { dy: animatedValue }])(event, gestureState);
+          Animated.event([null, { dy: animatedValue }], {
+            useNativeDriver: false,
+          })(event, gestureState);
         }
       },
       onPanResponderRelease: (_, gestureState) => {
         const { moveY } = gestureState;
-        if (height - moveY < 200) {
+        if (height - moveY < 150) {
           closeDrawer();
         } else {
           openDrawer();
@@ -70,7 +71,7 @@ export const BottomDrawer: React.FC<BottomDrawerProps> = ({
     } else {
       closeDrawer();
     }
-  }, [animatedValue, closeDrawer, isVisible, openDrawer]);
+  }, [isVisible]);
 
   const animatedStyle = {
     transform: [{ translateY: animatedValue }],
@@ -81,7 +82,7 @@ export const BottomDrawer: React.FC<BottomDrawerProps> = ({
       style={[
         animatedStyle,
         styles.drawerContent,
-        { minHeight, maxHeight, backgroundColor: backGroundColor ?? "#ffff" },
+        { minHeight, maxHeight, backgroundColor: backGroundColor ?? "#EBEDEF" },
       ]}
     >
       <Animated.View
@@ -89,10 +90,10 @@ export const BottomDrawer: React.FC<BottomDrawerProps> = ({
         style={styles.notchContainer}
       >
         {notchBar && (
-          <View
+          <Animated.View
             style={[
               styles.notchBar,
-              { backgroundColor: notchColor ?? "#0000" },
+              { backgroundColor: notchColor ?? "#0022" },
             ]}
           />
         )}

@@ -2,6 +2,8 @@
 
 A react-native bottom drawer component
 
+"To all the people who sucks in front-end" cit.
+
 ## Installation
 
 ```sh
@@ -19,13 +21,39 @@ yarn add enhanced-rn-bottom-drawer
 ```js
 import { BottomDrawer } from "enhanced-rn-bottom-drawer";
 
-<BottomDrawer isVisible={true} closeAction={() => {
-    */insert your action to close the drawer */
-    }}>
+type Props extends ViewProps;
 
-  {children}
+export const DrawerContainer: React.FC<Props> = ({children})=> {
+  return (
+    <BottomDrawer
+      isVisible={/* visibleProp from redux for example */}
+      closeAction={()=> {/* close action from redux for example */}}
+    >
+      {children}
+      {children}
+      {children}
+    </BottomDrawer>
+  )
+}
+```
 
-</BottomDrawer>;
+## Import
+
+```js
+import { BottomDrawer } from "enhanced-rn-bottom-drawer";
+
+type Props extends ViewProps;
+
+export const App = ()=> {
+return (
+    <SafeAreaView style={styles.safeAreaStyle}>
+      <NavigationContainer theme={containerTheme}>
+        <RootStack />
+      </NavigationContainer>
+      <DrawerContainer />
+    </SafeAreaView>
+  );
+}
 ```
 
 ## Props
