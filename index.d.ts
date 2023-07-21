@@ -12,4 +12,6 @@ declare module "enhanced-rn-bottom-drawer" {
     notchColor?: ColorValue;
     backGroundColor?: ColorValue;
   }
+
+  export const BottomDrawer: React.FC<BottomDrawerProps>;
 }
